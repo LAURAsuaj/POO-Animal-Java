@@ -3,18 +3,27 @@
  */
 public class Principal {
     /**
-     * Primer método que se ejecuta en mi aplicación
+     * Primer método que se ejecuta en la aplicación
      * @param args
-     *
      * Complejidad temporal: O(1) Complejidad Constante
      */
     public static void main(String[] args) {
-        Animal perro = new Animal("perro", "guau");
-        Animal gato = new Animal("gato", "miau");
-        Animal vaca = new Animal("vaca", "muuu");
+        Emociones tristeza = new Emociones("Tristeza", "☹️");
+        Emociones felicidad = new Emociones("Felicidad", "😃");
+        Emociones risa = new Emociones("Risa", "\uD83E\uDD23");
+        Emociones aburrido = new Emociones("Aburrido", "\uD83D\uDE12");
+        Emociones divertido = new Emociones("Divertido", "\uD83E\uDD2A");
+        Emociones silencio = new Emociones("Silencio", "\uD83E\uDD2B");
+        Emociones mentiroso = new Emociones("Mentiroso", "\uD83E\uDD25");
+        Emociones enamorado = new Emociones("Enamorado", "\uD83E\uDD70");
 
-        perro.hacerSonido();
-        gato.hacerSonido();
-        vaca.hacerSonido();
+        tristeza.visualizar();
+        felicidad.visualizar();
+        risa.visualizar();
+        aburrido.visualizar();
+        divertido.visualizar();
+        silencio.visualizar();
+        mentiroso.visualizar();
+        enamorado.visualizar();
     }
 }
